@@ -54,29 +54,7 @@ The system is composed of modular layers, each handling a specific stage of the 
 7. The query is validated and executed safely.
 8. The system returns the resulting data rows.
 
----
 
-## Repository Structure
-backend/
-├── src/
-│ ├── config.py
-│ ├── embeddings_client.py
-│ ├── rag_query.py
-│ ├── run_full_pipeline.py
-│ ├── schema_fetcher.py
-│ ├── schema_inspect.py
-│ ├── sql_executor.py
-│ ├── vector_store.py
-│ └── init.py
-├── requirements.txt
-├── .env.example
-├── .gitignore
-└── README.md
-
-yaml
-Copy code
-
----
 
 ## Setup Instructions
 
@@ -121,8 +99,7 @@ python -m src.vector_store
 7. Run the Query Pipeline
 Ask questions in natural language:
 
-bash
-Copy code
+
 python -m src.run_full_pipeline --ask "Show all suppliers who delivered inventory in the last 6 months."
 The system will:
 
@@ -133,7 +110,7 @@ Generate SQL through the LLM
 Execute the query
 
 Return formatted results in the console
-
+```
 How to Adapt This for Your Database
 You can use this architecture for any MySQL database by following these steps:
 
@@ -175,3 +152,4 @@ Author
 Hrishikesh Vastrad
 AI Engineer Trainee, SandLogic Technologies
 India
+
