@@ -1,0 +1,9 @@
+sqlalchemy>=1.4
+pymysql
+pandas
+chromadb
+langchain>=0.0.###    # optional; if using langchain docs; adapt to your installed version
+openai>=1.0.0          # used only for typing in wrappers; your client will be used directly
+retrying
+python-dotenv
+tqdm
