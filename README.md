@@ -70,14 +70,13 @@ myenv\Scripts\activate       # For Windows
 # or
 source myenv/bin/activate    # For macOS/Linux
 3. Install Dependencies
-bash
-Copy code
+
 pip install -r requirements.txt
 4. Configure Environment Variables
 Create a .env file in the root directory (or copy from .env.example):
 
-ini
-Copy code
+
+
 OPENAI_API_KEY=your_openai_key_here
 OPENAI_BASE_URL=https://api.openai.com/v1
 DB_HOST=127.0.0.1
@@ -92,8 +91,7 @@ Use the provided data seeding script (seed_database.py) to generate sample data 
 6. Build the Vector Store
 Before running queries, extract and embed the schema:
 
-bash
-Copy code
+
 python -m src.schema_fetcher
 python -m src.vector_store
 7. Run the Query Pipeline
@@ -152,4 +150,5 @@ Author
 Hrishikesh Vastrad
 AI Engineer Trainee, SandLogic Technologies
 India
+
 
